@@ -1,0 +1,14 @@
+h1{
+	color:#0066CC;
+}
+p{
+	color:blue;
+	font-family:arial;
+	line-height:150%;
+}
+ul{
+	font-weight:bold;
+}
+ol{
+	font-style:italic;
+}
