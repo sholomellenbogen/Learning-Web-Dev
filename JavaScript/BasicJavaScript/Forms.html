@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- @Desc: forms-->
+
+<html>
+	<head>
+		<script type="text/javascript">
+			function validator(){
+				if(document.LoginForm.theBox.checked){
+					document.write(document.LoginForm.username.value + "<br/>" + document.LoginForm.password.value + "<br/>" + document.LoginForm.email.value);
+				}else{
+					alert("You didn't check the box!");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form name="LoginForm">
+			Username: <input type="text" name="username"/> <br/><br/>
+			Password: <input type="password" name="password"/> <br/><br/>
+			Email: <input type="email" name="email"/> <br/><br/>
+			<input type="checkbox" name="theBox"/>
+			<!-- <input type="submit" value="Submit" onClick="validator()"/> <br/><br/> -->
+			<input type="button" value="Press Me!" onClick="validator()"/>
+		</form>
+		
+		<script type="text/javascript">
+			//var x = document.LoginForm.username.name;
+			//document.write(x);
+			
+			
+		</script>
+	</body>
+</html>

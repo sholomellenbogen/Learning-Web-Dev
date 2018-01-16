@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- @Desc: basics + functions-->
+
+<html>
+	<head>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function doFirst(){
+				document.write("I am First<br/>");
+			}
+			
+			function doSecond(){
+				document.write("SECOND!!!<br/>");
+			}
+			
+			function start(){
+				doFirst();
+				doSecond();
+			}
+			start();
+			function ILove(x){
+				alert("I LOVE " + x + "!!!!! <br/>");
+			}
+			document.write();
+			
+			function apples(one, two){
+				document.write(one + " is better than " + two + "<br/>");
+			}
+			
+			function Add(a,b){
+				return a+b;
+			}
+			document.write("Add(3,6) = " + Add(3,6) + "<br/>");
+			
+			
+			
+		</script>
+		<form>
+			<br/>
+			<input type="button" value="I Love..." onclick="ILove('BACON')">
+			<br/><br/>
+			<input type="button" value="a is better than b" onclick="apples('BACON','cake')">
+		</form>
+	</body>  
+</html>

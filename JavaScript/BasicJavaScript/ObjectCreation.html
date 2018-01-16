@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- @Desc: start of event handlers-->
+
+<html>
+	<head>
+		<script type="text/javascript">
+			//constructor object initialization
+			function person(name, age){
+				this.name = name;
+				this.age = age;
+				
+				//associated yearsLeft() function as method of person object
+				this.yearsUntillRetire = yearsLeft;
+			}
+			
+			var sholom = new person("sholom", 19);
+			
+			var bob = new person("billy bobb", 78);
+			
+			
+			function yearsLeft(){
+				var numYears = 65 - this.age;
+				return numYears;
+			}
+			
+			
+			
+			//initializor object initialization
+			bucky = {name:"Buck Roberts", age:24};
+			
+			
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			document.write(sholom.name + " is " + sholom.age +"<br/><br/>");
+			
+			document.write(bucky.name + " is " + bucky.age + "<br/><br/>");
+			
+			document.write(sholom.name + " can retire in " + sholom.yearsUntillRetire() + " years")
+			
+		</script>
+	</body>
+</html>

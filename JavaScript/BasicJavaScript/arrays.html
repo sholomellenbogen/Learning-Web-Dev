@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- @Desc: arrays-->
+
+<html>
+	<head>
+		<script type="text/javascript">
+			
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var people = new Array("Sholom", "Tommy", "Billy", "Molly");
+			
+			//fixed empty array
+			var things = new Array(3);
+			
+			things[0] = 4;
+			things[1] = "bob";
+			things[2] = 4.2;
+			
+			//dynamic array
+			var stuff = new Array();
+			
+			//concat methond
+			var combined = people.concat(things);
+
+			//convert array to string
+			var string1 = combined.join(" - ");
+			
+			//pop methond
+			//combined.pop();
+			
+			//reverse method
+			combined.reverse();
+			
+			//push method
+			combined.push("wabalabadubdub", "hoops");
+			
+			//sort method
+			combined.sort();
+			
+			
+			document.write(string1 + "<br/><br/>");
+			
+			
+			for(i = 0; i < combined.length; i++){
+				document.write(combined[i] + " - ");
+			}
+			document.write("<br/><br/>")
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- @Desc: math and date objects-->
+
+<html>
+	<head>
+		<script type="text/javascript">
+			
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//MATH OBJECT STUFF
+			//var n = prompt("Enter a Number:","");
+			//var answer = Math.sqrt(n);
+			//document.write(Math.PI + "<br/><br/>");
+			//document.write(answer + "<br/><br/>");
+			
+			
+			//DATE OBJECT STUFF
+			
+			function printTime(){
+				var now = new Date();
+				var hours = now.getHours();
+				var mins = now.getMinutes();
+				var sec = now.getSeconds();
+				document.body.innerHTML = "";
+				document.write(hours+":"+mins+":"+sec + "<br/>");
+			}
+			
+			setInterval("printTime()", 1000);
+		</script>
+	</body>
+</html>
